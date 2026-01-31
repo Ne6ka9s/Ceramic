@@ -11,7 +11,7 @@
     &__img {
         width: 100%;
         margin-top: 40px;
-        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
     }
 
     &__text {
@@ -43,14 +43,6 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .activities {
-        &__column {
-            padding: 0 10px;
-        }
-    }
-}
-
 @media screen and (min-width: 1200px) {
     .activities {
         padding: 60px 0 0 0;
@@ -59,7 +51,7 @@
             margin-top: 80px;
         }
 
-        &__column {
+        &__col {
             padding: 0 10px;
         }
 
@@ -78,9 +70,5 @@
 @media screen and (min-width: 1920px) {
     .activities {
         padding-top: 100px;
-
-        &__text {
-            margin-block-start: 30px;
-        }
     }
 }
