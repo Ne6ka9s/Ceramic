@@ -1,0 +1,152 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+    padding: 50px 0;
+    background-color: $dark;
+
+    &_spaced {
+        margin-top: 60px;
+    }
+
+    &__header {
+        color: $light;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $light;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &_spaced {
+            margin-top: 40px;
+        }
+    }
+
+    &__form {
+        margin-top: 40px;
+    }
+
+    &__input {
+        display: block;
+        width: 293px;
+        padding-bottom: 15px;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid $ui-active;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $ui-active;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $ui-active;
+        }
+    }
+
+    &__check-block {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        color: $light;
+
+        a {
+            color: #a22dc6;
+            text-decoration: none;
+            margin-left: 2px;
+        }
+    }
+
+    &__checkbox {
+        margin-right: 15px;
+        width: 15px;
+        height: 15px;
+    }
+
+    &__form-btn {
+        margin-top: 20px;
+    }
+
+    &__links {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 66px;
+        row-gap: 40px;
+    }
+
+    &__nav {
+        margin-top: 40px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+    }
+
+    &__link {
+        a {
+            color: $light;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+
+    }
+
+    &__social {
+        margin-top: 40px;
+
+        &-block {
+            margin-top: 40px;
+            display: flex;
+            column-gap: 10px;
+            padding: 0;
+            list-style-type: none;
+
+            a {
+                display: block;
+                color: $light;
+                text-decoration: none;
+                font-size: 24px;
+
+                span:before {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        margin-top: 40px;
+        color: $light;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+}
